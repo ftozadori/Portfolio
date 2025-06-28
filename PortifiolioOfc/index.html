@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="Img/portfolio.png">
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="Img/FotoDePerfil.jpg" class="foto-perfil">
+        <h1>Felipe Tozadori</h1>
+        <p class="cabecalho-sub-titulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Sou estudante do 3° semestre de Análise e Desenvolvimento de Sistemas na UNICESUMAR e estou
+                iniciando minha trajetória na área de Tecnologia.
+                Este portfólio reúne alguns dos projetos acadêmicos que desenvolvi até o momento, demonstrando meu
+                interesse em aprender e evoluir constantemente.
+                Estou em busca de uma oportunidade de estágio para colocar meus conhecimentos em prática, contribuir com
+                meu potencial e dar os primeiros passos na
+                construção de uma carreira sólida no mercado de TI.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulos">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="Img/Projeto1AEP.png" alt="Projheto 1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Crud Em C</h3>
+                    <p class="paragrafo-projetos">
+                        Como um dos meus primeiros projetos para faculdade, aprensentei um sistema
+                        de cadastro de usuários com persistência de dados em arquivo txt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="Img/Projeto2TimeWise.png" alt="Projheto 2" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Time Wise</h3>
+                    <p class="paragrafo-projetos">
+                        Projeto criado com objetivo de demonstrar uma nova ideia de aplicativo
+                        para gestão de tempo. Uma nova ideia para gerenciar seu tempo e melhorar seu bem-estar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="Img/Projeto3SepararParaTransformar.png" alt="Projheto 3" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Separar Para Transformar</h3>
+                    <p class="paragrafo-projetos">
+                    Com objetivo de concientizar a população com um dos temas de ODS 11, foi
+                    criado o projeto Separar para transformar. Um site interativo para concientização
+                    sobre a importância da coleta de lixo.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input id="nome" placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">
+                <textarea rows="15" id="mensagem" placeholder="Digite sua Mensagem" class="campo-form"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhastApp</button>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
